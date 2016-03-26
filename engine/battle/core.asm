@@ -1249,6 +1249,8 @@ HandlePlayerBlackOut: ; 3c837 (f:4837)
 	res 5, a
 	ld [wd732], a
 	call ClearScreen
+	callba ClearSAV
+	jp Init
 	scf
 	ret
 
