@@ -22,9 +22,10 @@ DisplayOakLabRightPoster: ; 1e965 (7:6965)
 	ld a, [wNumSetBits]
 	cp 2
 	tx_pre_id SaveOptionText
-	jr c, .ownThreeOrMoreMon
+	jr c, .ownLessThanTwo
+	; own two or more mon
 	tx_pre_id StrengthsAndWeaknessesText
-.ownThreeOrMoreMon
+.ownLessThanTwo
 	jp PrintPredefTextID
 
 SaveOptionText: ; 1e97e (7:697e)
@@ -199,7 +200,7 @@ CinnabarGymQuiz_1ea92: ; 1ea92 (7:6a92)
 	ld a, [wCurrentMenuItem]
 	cp c
 	jr nz, .wrongAnswer
-	ld hl, wd126
+	ld hl, wCurrentMapScriptFlags
 	set 5, [hl]
 	ld a, [hGymGateIndex]
 	ld [$ffe0], a

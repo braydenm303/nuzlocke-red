@@ -1,14 +1,13 @@
 # Linux
 
-	sudo apt-get install make gcc bison git python python-setuptools
-	sudo easy_install pypng
+	sudo apt-get install make gcc bison git python
 
-	git clone git://github.com/bentley/rgbds.git
+	git clone https://github.com/bentley/rgbds
 	cd rgbds
 	sudo make install
 	cd ..
 
-	git clone --recursive git://github.com/iimarckus/pokered.git
+	git clone --recursive https://github.com/pret/pokered
 	cd pokered
 
 To build **pokered.gbc** and **pokeblue.gbc**:
@@ -23,17 +22,16 @@ To build them individually:
 
 # Mac
 
-In the shell, run:
+In **Terminal**, run:
 
 	xcode-select --install
-	sudo easy_install pypng
 
-	git clone git://github.com/bentley/rgbds.git
+	git clone https://github.com/bentley/rgbds
 	cd rgbds
 	sudo make install
 	cd ..
 
-	git clone --recursive git://github.com/iimarckus/pokered.git
+	git clone --recursive https://github.com/pret/pokered
 	cd pokered
 
 	make
@@ -41,17 +39,16 @@ In the shell, run:
 
 # Windows
 
-To build on Windows, use [**Cygwin**](http://cygwin.com/install.html) (32-bit).
+To build on Windows, use [**Cygwin**](http://cygwin.com/install.html). Use the default settings.
 
-In the installer, select the following packages: `make` `git` `gettext` `python` `python-setuptools`
+In the installer, select the following packages: `make` `git` `python` `gettext`
 
 Then get the most recent version of [**rgbds**](https://github.com/bentley/rgbds/releases/).
-Put `rgbasm.exe`, `rgblink.exe` and `rgbfix.exe` in `C:\cygwin\usr\local\bin`.
+Extract the archive and put `rgbasm.exe`, `rgblink.exe` and `rgbfix.exe` in `C:\cygwin\usr\local\bin`.
 
 In the **Cygwin terminal**:
 
-	easy_install pypng
-	git clone --recursive git://github.com/iimarckus/pokered.git
+	git clone --recursive https://github.com/pret/pokered
 	cd pokered
 
 	make

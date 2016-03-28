@@ -2379,7 +2379,7 @@ StartTrainerBattle:: ; 325d (0:325d)
 	ret
 
 EndTrainerBattle:: ; 3275 (0:3275)
-	ld hl, wd126
+	ld hl, wCurrentMapScriptFlags
 	set 5, [hl]
 	set 6, [hl]
 	ld hl, wd72d
@@ -4714,9 +4714,9 @@ TextPredefs::
 	add_tx_pre FightingDojoText_52a1d               ; 38
 	add_tx_pre NewBicycleText                       ; 39
 	add_tx_pre IndigoPlateauStatues                 ; 3A
-	add_tx_pre VermilionGymTrashSuccesText1         ; 3B
-	add_tx_pre VermilionGymTrashSuccesText2         ; 3C XXX unused
-	add_tx_pre VermilionGymTrashSuccesText3         ; 3D
+	add_tx_pre VermilionGymTrashSuccessText1        ; 3B
+	add_tx_pre VermilionGymTrashSuccessText2        ; 3C XXX unused
+	add_tx_pre VermilionGymTrashSuccessText3        ; 3D
 	add_tx_pre VermilionGymTrashFailText            ; 3E
 	add_tx_pre TownMapText                          ; 3F
 	add_tx_pre BookOrSculptureText                  ; 40
