@@ -1900,12 +1900,12 @@ _LinkCanceledText::
 INCLUDE "text/oakspeech.asm"
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "What do you want"
+	line "to name your"
+	cont "@"
 	TX_RAM wcd6d
 	text "?"
-	done
+	prompt
 
 _YourNameIsText::
 	text "Right! So your"

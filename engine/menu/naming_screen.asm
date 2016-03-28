@@ -15,13 +15,7 @@ AskName: ; 64eb (1:64eb)
 	call PrintText
 	coord hl, 14, 7
 	lb bc, 8, 15
-	ld a, TWO_OPTION_MENU
-	ld [wTextBoxID], a
-	call DisplayTextBoxID
 	pop hl
-	ld a, [wCurrentMenuItem]
-	and a
-	jr nz, .declinedNickname
 	ld a, [wUpdateSpritesEnabled]
 	push af
 	xor a
